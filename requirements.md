@@ -13,8 +13,8 @@ So the applikation is bringing gamification to the classroom and the learning pr
 - if teacher is the user
   - Navigation bar with Home, Students, Badgegroups, Badges, Contact us
   - Home page with info on Badgemania
-  - List of students in the school
-  - List of Badgegroups that the teacher has created
+  - Student page with list of students in the school
+  - Badgegroup page with list of Badgegroups that the teacher has created
     - Create a new Badgegroup
     - Badgegroup
       - Students
@@ -26,11 +26,30 @@ So the applikation is bringing gamification to the classroom and the learning pr
         - List of Badges
         - Delete Badge from Badgegroup
         - Update Badge in Bagegroup
+  - Badges page with all created badges
+  - Contact page with information about how to get in touch with us.
 - if student is the user
   - Navigation bar with Home, Badgebag, Badgegroups, Contact us
-- Groupe page with all groups a teacher have
-- Badge page with all badges
-- Contact page with information about how to get in touch with us.
-- Navigation menu that lets the user navigate between pages.
-
-The teacher can create courses and adding students to the courses.
+  - Home page with info on Badgemania
+  - Badgebag page with all badges that the student have
+  - Badgegroups page with all groups the student belongs to
+  - Contact page with information about how to get in touch with us.
+- if school admin is the user
+  - Navigation bar with Home, students, teachers, Contact us
+  - Home page with info on Badgemania
+  - Student page with list of students in the school
+    - Create a student
+    - Remove a student
+    - Update a student
+  - Teacher page with list of teachers in the school
+    - Create a teacher
+    - Remove a teacher
+    - Update a teacher
+  - Contact page with information about how to get in touch with us.
+- if super admin is the user
+  - Navigation bar with Home, Schools, Contact us
+  - Home page with info on Badgemania
+  - School page with list of schools in the application
+    - Create a school
+    - Remove a school
+    - Update a school
