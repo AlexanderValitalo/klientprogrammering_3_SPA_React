@@ -14,11 +14,11 @@ export default function Home() {
           width={400}
           height={37}
         />
-        <h1 className="text-5xl font-bold text-center m-3 font-russo p-4 border border-transparent border-gray-300 bg-gray-100 dark:border-neutral-700 dark:bg-neutral-800/30 rounded-lg">
+        <h1 className="text-4xl font-bold text-center m-3 font-russo p-4 border border-transparent border-gray-300 bg-gray-100 dark:border-neutral-700 dark:bg-neutral-800/30 rounded-lg sm:text-5xl">
           Welcome to Badgemania!
         </h1>
-        <h2 className="text-3xl font-semibold text-center m-3 font-russo">
-          We make unmotivated students motivated with gamification!
+        <h2 className="text-3xl font-semibold text-center m-3 font-russo max-w-2xl">
+          We make unmotivated students motivated with gamification and digital badges!
         </h2>
       </main>
     </Navigation>
