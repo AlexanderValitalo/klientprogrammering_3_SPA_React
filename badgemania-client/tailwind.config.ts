@@ -15,6 +15,7 @@ const config: Config = {
     },
     fontFamily: {
       russo: ["Russo One", "sans-serif"],
+      martian: ["Martian Mono", "monospace"],
     },
   },
   plugins: [],
