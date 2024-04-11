@@ -9,8 +9,14 @@ So the applikation is bringing gamification to the classroom and the learning pr
 
 ## Functional Requirements
 
-- Start screen (Home page) with a presentation of the product.
-- if teacher is the user
+- if no user is logged in
+  -  Start page (Home page) with a presentation of the product.
+  -  Solutions page with info about different solutions for different type of users like students, teachers and school admin.
+  -  Pricing page with info about different packages that has different amount of teachers and student accounts.
+  -  About page with info about Badgemania and what it does.
+  -  Contact page with information about how to get in touch with us.
+  -  Sign in page where different users can sign in.
+- if teacher is the logged in user
   - Navigation bar with Home, Students, Badgegroups, Badges, Contact us
   - Home page with info on Badgemania
   - Student page with list of students in the school
