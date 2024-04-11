@@ -1,8 +1,6 @@
-"use client";
-
-import { FC, useState } from "react";
 import { RouteLink } from "@/interfaces/rout-link";
-import Link from "next/link";
+import { ReactNode } from "react";
+import NavigationLink from "./NavigationLink";
 
 const LINKS: RouteLink[] = [
   { href: "/", text: "Home" },
@@ -10,47 +8,23 @@ const LINKS: RouteLink[] = [
   { href: "/pricing", text: "Pricing" },
   { href: "/about", text: "About" },
   { href: "/contact", text: "Contact" },
+  { href: "/sign-in", text: "Sign in" },
 ];
 
-export default function Navigation() {
-  const [highlightedLink, setHighlightedLink] = useState<string>("/");
+interface NavigationProps {
+  children: ReactNode;
+}
 
-  const handleNavClick = (linkButtonName: string) => {
-    setHighlightedLink(linkButtonName);
-  };
-
+export default function Navigation({ children }: NavigationProps) {
   return (
-    <div className="flex justify-evenly gap-2 m-5">
-      {LINKS.map((link) => (
-        <NavigationLink
-          key={link.href}
-          link={link}
-          isSelected={highlightedLink === link.href}
-          onClick={() => handleNavClick(link.href)}
-        />
-      ))}
+    <div className="flex flex-col w-full">
+      <div className="flex flex-row flex-wrap justify-evenly m-2">
+        {LINKS.map((link) => (
+          <NavigationLink key={link.href} link={link} />
+        ))}
+      </div>
+      <hr />
+      {children}
     </div>
   );
 }
-
-interface NavigationLinkProps {
-  link: RouteLink;
-  isSelected: boolean;
-  onClick: () => void;
-}
-
-const NavigationLink: FC<NavigationLinkProps> = ({ link, isSelected, onClick }) => {
-  return (
-    <Link
-      onClick={onClick}
-      href={link.href}
-      className={
-        isSelected
-          ? "m-24"
-          : "group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-      }
-    >
-      <h2>{link.text}</h2>
-    </Link>
-  );
-};
