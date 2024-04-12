@@ -7,8 +7,13 @@ import Header from "@/components/header/Header";
 // }
 
 const ABOUTS: string[] = [
-  "A vision to make learning more fun and engaging for students",
-  "A vision to free time for teachers to focus on teaching",
+  "Our vision is to make learning fun and engaging for students with the help of gamification.",
+  "We also help teachers realse the full potential of their students.",
+  "We are a group of people who are passionate about education and technology.",
+  "We believe that by combining education and technology we can make a difference for many students.",
+  "With Badgemanias badges we hope to inspire students to learn more and to have fun while doing it.",
+  "Gamification is a great way to motivate learning and we hope to inspire teachers to use it in their classrooms.",
+  "Badgemania is super easy to use and we hope that you will enjoy using it as much as we do.",
 ];
 
 export default function About() {
@@ -17,18 +22,15 @@ export default function About() {
       <main className="flex flex-col items-center justify-between">
         <Header headerInfo="About Badgemania:" />
 
-        <div className="flex flex-col font-martian text-black border-neutral-700 bg-neutral-800/30 rounded-2xl m-2 lg:flex-row">
-          <div className="flex flex-col items-center border bg-slate-200 rounded-2xl m-3 p-2">
-            <h2 className="text-3xl font-semibold text-center rounded-lg my-2">
-              {"What is Badgemania?"}
-            </h2>
-            <p className="text-2xl font-semibold my-2">{}</p>
-            <ul className="list-disc mx-7 text-xl">
-              {ABOUTS.map((priceText) => (
-                <li key={priceText}>{priceText}</li>
-              ))}
-            </ul>
-          </div>
+        <div className="flex flex-col font-martian justify-center text-black border-neutral-700 bg-neutral-800/30 rounded-2xl m-2 sm:flex-row sm:flex-wrap">
+          {ABOUTS.map((priceText) => (
+            <div
+              className="flex m-2 px-10 py-2 text-center items-center text-wrap max-w-80 bg-slate-200 rounded-xl"
+              key={priceText}
+            >
+              <p className="align-middle">{priceText}</p>
+            </div>
+          ))}
         </div>
       </main>
     </Navigation>
