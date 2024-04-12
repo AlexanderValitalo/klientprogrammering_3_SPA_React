@@ -6,6 +6,11 @@ export default function SignIn() {
     <Navigation>
       <main className="flex flex-col items-center justify-between">
         <Header headerInfo="Sign in:" />
+
+        <p className="font-martian">
+          In the future we will have the possibility for different users to sign in here to use
+          Badgemania
+        </p>
       </main>
     </Navigation>
   );
