@@ -1,9 +1,11 @@
 import { PriceInfoList } from "./page";
 
+//PriceTableProps for the PriceTable component
 interface PriceTableProps {
   priceInfoText: PriceInfoList;
 }
 
+//PriceTable component that contains information about the different packages that Badgemania offers
 export default function PriceTable({ priceInfoText }: PriceTableProps) {
   return (
     <div className="flex flex-col items-center border bg-slate-200 rounded-2xl m-3 p-2">

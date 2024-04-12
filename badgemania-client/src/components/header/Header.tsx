@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+//Header component for Badgemania
 export default function Header({ headerInfo }: { headerInfo: string }) {
   return (
     <div className="flex flex-col items-center sm:flex-row">

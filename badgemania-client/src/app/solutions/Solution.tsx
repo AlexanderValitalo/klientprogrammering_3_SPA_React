@@ -1,9 +1,11 @@
 import { SolutionsList } from "./page";
 
+//SolutionProps for the Solution component
 interface SolutionProps {
   solutionText: SolutionsList;
 }
 
+//Solution component that contains information about the solutions that Badgemania offers
 export default function Solution({ solutionText }: SolutionProps) {
   return (
     <div className="flex flex-col items-center border bg-slate-200 rounded-2xl m-3 p-2">

@@ -4,10 +4,12 @@ import { RouteLink } from "@/interfaces/rout-link";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+// NavigationLinkProps for the NavigationLink component
 interface NavigationLinkProps {
   link: RouteLink;
 }
 
+// NavigationLink component that contains the navigation link
 export default function NavigationLink({ link }: NavigationLinkProps) {
   const router = usePathname();
 

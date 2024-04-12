@@ -1,6 +1,7 @@
 import Navigation from "@/components/navigation/Navigation";
 import Header from "@/components/header/Header";
 
+//Contact page for Badgemania that contains information about how to contact the company
 export default function Contact() {
   return (
     <Navigation>
@@ -19,7 +20,7 @@ export default function Contact() {
               </a>
             </p>
             <p className="mt-2">
-              We always want to have feedback so we can make Badgemania even better
+              We always want to have feedback so we can make Badgemania even better.
             </p>
           </div>
         </div>

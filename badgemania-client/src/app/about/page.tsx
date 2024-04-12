@@ -1,11 +1,7 @@
 import Navigation from "@/components/navigation/Navigation";
 import Header from "@/components/header/Header";
 
-// interface AboutList {
-//   header: string;
-//   text: string[];
-// }
-
+//ABOUTS contains information about Badgemania
 const ABOUTS: string[] = [
   "Our vision is to make learning fun and engaging for students with the help of gamification.",
   "We also help teachers realse the full potential of their students.",
@@ -16,6 +12,7 @@ const ABOUTS: string[] = [
   "Badgemania is super easy to use and we hope that you will enjoy using it as much as we do.",
 ];
 
+//About page for Badgemania that contains information about the company
 export default function About() {
   return (
     <Navigation>

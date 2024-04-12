@@ -2,6 +2,7 @@ import { RouteLink } from "@/interfaces/rout-link";
 import { ReactNode } from "react";
 import NavigationLink from "./NavigationLink";
 
+// Navigation links
 const LINKS: RouteLink[] = [
   { href: "/", text: "Home" },
   { href: "/solutions", text: "Solutions" },
@@ -11,10 +12,12 @@ const LINKS: RouteLink[] = [
   { href: "/sign-in", text: "Sign in" },
 ];
 
+// NavigationProps for the Navigation component
 interface NavigationProps {
   children: ReactNode;
 }
 
+// Navigation component that contains the navigation links
 export default function Navigation({ children }: NavigationProps) {
   return (
     <div className="flex flex-col w-full">

@@ -2,11 +2,13 @@ import Navigation from "@/components/navigation/Navigation";
 import Solution from "./Solution";
 import Header from "@/components/header/Header";
 
+//SolutionsList interface of solutions information
 export interface SolutionsList {
   header: string;
   text: string[];
 }
 
+//SOLUTIONS contains information about the solutions that Badgemania offers
 const SOLUTIONS: SolutionsList[] = [
   {
     header: "Student",
@@ -34,6 +36,7 @@ const SOLUTIONS: SolutionsList[] = [
   },
 ];
 
+//Solutions page for Badgemania that contains information about the solutions that Badgemania offers
 export default function Solutions() {
   return (
     <Navigation>

@@ -2,12 +2,14 @@ import Navigation from "@/components/navigation/Navigation";
 import Header from "@/components/header/Header";
 import PriceTable from "./PriceTable";
 
+//PriceInfoList interface of price information
 export interface PriceInfoList {
   header: string;
   price: string;
   text: string[];
 }
 
+//PRICEINFO contains information about the different packages that Badgemania offers
 const PRICEINFO: PriceInfoList[] = [
   {
     header: "Small package",
@@ -46,6 +48,7 @@ const PRICEINFO: PriceInfoList[] = [
   },
 ];
 
+//Pricing page for Badgemania that contains information about the different packages that Badgemania offers
 export default function Pricing() {
   return (
     <Navigation>
