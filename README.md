@@ -16,7 +16,7 @@
 ### `Komponenter som används på flera ställen i min applikation`
 
 #### Header
- Header är en komponent består av en yttre div som innehåller en Image med badgemanias logga och en h1 som informerar vilken sida man är på
+Header är en komponent består av en yttre div som innehåller en Image med badgemanias logga och en h1 som informerar vilken sida man är på
  
 #### NavigationLink
 NavigationLink är en komponent som består av en Link och en h2 som byggs upp av informationen från link-propen som är av typen NavigationLinkProps, link i sin tur är av typen RouteLink som jag har definierat i en egen fil under mappen interfaces. Denna information kommer ifrån Navigation-komponenten.
@@ -38,5 +38,20 @@ Solution page har listan med SOLUTIONS som skickas till komponenten Solution. So
 
 #### Pricing page (/pricing)
 Mappen pricing innehåller 2 filer där den ena är page.tsx och den andra är en komponent PriceTable.tsx som används på denna page.tsx. 
+PriceTable är en komponent som tar in priceInfoText som PriceTableProps. PriceTableProps är ett interface som talar om att priceInfoText är av typen PriceInfoList. priceInfoText får sin information av page.tsx och med hjälp av den så bygger den upp en div som innehåller en h2 med titeltexten på det aktuella prispaketet, en p med priset och en ul-lista med information om vad som ingår i det prispaketet. 
+Pricing page har listan med PRICEINFO som skickas till komponenten PriceTable genom .map. Pricing har alltså en Navigation-komponent som innehåller en main som i sin tur innehåller komponenten Header följt av en div som tar PRICEINFO-listan och bygger vadera PriceTable med som sagt .map
+
+#### About page (/about)
+Mappen about innehåller page.tsx filen. About page byggs upp med hjälp av string-listan ABOUTS. Sidan har en Navigation-komponent som innehåller en main som i sin tur innehåller en Header-komponent och en div som kör .map på ABOUTS-listan för att bygga upp en div och en p för varje element i arrayen.
+
+#### Contact page (/contact)
+Mappen contact innehåller page.tsx filen. Contact page byggs upp med hjälp av Navigation-komponenten som innehåller en main som i sin tur innehåller Header-komponenten följt av en div. Denna div innehåller en annan div som har 4 stycken p med contactinformation och uppmaning om att företaget gärna tar emot feedback. Den andra p innehåller även en mail-länk som i nuläget fungerar men inte är kopplad till en riktig mail för visning.
+
+#### Sign in page (/sign-in)
+Mappen innehåller page.tsx. Denna sida innehåller i nuläget endast komponenten Navigation som innehåller en main och som i sin tur innehåller komponenten Header och en p som meddelar att sign in funktionen kommer bli tillgänglig i framtiden att använda.
+
+## Reflektion och Analys
+I denna uppgift valde jag att utmana mig själv ordentligt genom att inte bara jobba i React och Next.JS som vi skulle utan också att använda TypeScript och Tailwindcss. Bara detta gör att jag redan har förbättrat min applikation avsevärt jämfört med om jag enbart hade gjort den med JavaScript och vanlig CSS. TypeScript gör ju att koden typas så att det blir säkrare och enklare att hitta eventuella fel som kan uppstås bland annat. Tailwind har varit riktigt smidigt att använda för styling och jag gillar det mycket jämfört med CSS. Det känns också som att Tailwind påminner till viss del om Bootstrap som jag använt mig av tidigare men ännu bättre vilket så klart är kanon. I mitt arbete så har jag försökt att skapa komponenter då jag upptäkt att jag upprepat mig i koden samt att jag har skapat interface för att typa t.ex. object som ska tas in eller skickas med. Man skulle kunna förbättra applikationen genom att ännu mer se över hierakin av komponenter. Går nog att dela upp i ännu fler steg, men de val som jag har gjort har jag tagit för att jag tycker att det ökar läsbarheten i koden vilket är bra för framtiden och skalbarheten. Jag är nöjd med min kod och design i nuläget om man tänker på den tid som jag haft till mitt förfogande samt att jag utmanade mig själv med TypeScript och Tailwindcss. Vad som självklart kan förbättras i nästa steg för applikationen är att bygga vidare på den med framförallt möjlighet till att kunna logga in som olika sorters användare som student, lärare, skol admin och super admin och att dessa då har olika funktioner som de kan utföra (se min requirements.md för mer information om detta).
+
 
 
