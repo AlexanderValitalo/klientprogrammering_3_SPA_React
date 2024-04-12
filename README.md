@@ -32,11 +32,11 @@ Home sidan använder komponenten Navigation och inuti den så finns ett mainelem
 Home sidan välkomnar användaren och förklarar kort vad Badgemania gör.
 
 #### Solutions page (/solutions)
-Solutions mappen innehåller 2 filer där den ena är page.tsx och den andra är en komponent Solution.tsx som används på denna page.tsx.
+Mappen solutions innehåller 2 filer där den ena är page.tsx och den andra är en komponent Solution.tsx som används på denna page.tsx.
 Solution är en komponent som tar in solutionText som SolutionProps. SolutionProps är ett interface som talar om att solutionText är av typen SolutionList. solutionText får sin information av page.tsx och med hjälp av den så bygger den upp en div som innehåller en h2 med texten för aktuell solution och därefter en ul.lista med li-element skapas med hjälp av solutionText.text med .map. 
 Solution page har listan med SOLUTIONS som skickas till komponenten Solution. Solution page bygger sidan genom att använda komponenten Navigation som innehåller ett main-element som i sin tur innehåller komponenten Header och en div som mappar igenom SOLUTIONS-object-arrayen och skapar en Solutionskomponent för varje object i arrayen.
 
-
-
+#### Pricing page (/pricing)
+Mappen pricing innehåller 2 filer där den ena är page.tsx och den andra är en komponent PriceTable.tsx som används på denna page.tsx. 
 
 
