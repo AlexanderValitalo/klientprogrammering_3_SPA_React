@@ -1,12 +1,12 @@
 import Navigation from "@/components/navigation/Navigation";
+import Header from "@/components/header/Header";
 
 export default function Contact() {
   return (
     <Navigation>
-      <h1>Contact us</h1>
-      <p>
-        Click <a href="mailto:info_badgemania@gmail.com">here</a> to email us.
-      </p>
+      <main className="flex flex-col items-center justify-between">
+        <Header headerInfo="Contact us!" />
+      </main>
     </Navigation>
   );
 }

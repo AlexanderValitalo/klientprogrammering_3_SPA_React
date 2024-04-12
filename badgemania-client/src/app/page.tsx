@@ -14,7 +14,7 @@ export default function Home() {
           width={400}
           height={37}
         />
-        <h1 className="text-4xl font-bold text-center m-3 font-martian p-4 border border-transparent border-neutral-700 bg-neutral-800/30 rounded-lg sm:text-5xl">
+        <h1 className="text-4xl font-bold text-center m-3 font-martian p-4 sm:text-5xl">
           Welcome to Badgemania!
         </h1>
         <h2 className="text-3xl font-semibold text-center m-3 font-martian max-w-2xl">

@@ -1,13 +1,12 @@
 import Navigation from "@/components/navigation/Navigation";
+import Header from "@/components/header/Header";
 
 export default function About() {
   return (
     <Navigation>
-      <h1>About us</h1>
-      <p>
-        We are a small team of developers who are passionate about building software. We are based
-        in the United States and have been in business since 2021.
-      </p>
+      <main className="flex flex-col items-center justify-between">
+        <Header headerInfo="About Badgemania:" />
+      </main>
     </Navigation>
   );
 }
