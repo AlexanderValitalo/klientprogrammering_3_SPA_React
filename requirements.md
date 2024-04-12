@@ -7,7 +7,7 @@ To increase their motivation, they will be given digital badges for the tasks th
 The teacher specifices the tasks in the applikation and decides when a task is completed.
 So the applikation is bringing gamification to the classroom and the learning process.
 
-## Functional Requirements
+## Functional Requirements (in this task)
 
 - if no user is logged in
   -  Start page (Home page) with a presentation of the product.
@@ -15,7 +15,10 @@ So the applikation is bringing gamification to the classroom and the learning pr
   -  Pricing page with info about different packages that has different amount of teachers and student accounts.
   -  About page with info about Badgemania and what it does.
   -  Contact us page with information about how to get in touch with us.
-  -  Sign in page where different users can sign in.
+  -  Sign in page where different users can sign in (just text now).
+
+## Functional Requirements (later in the future)
+
 - if teacher is the logged in user
   - Navigation bar with Home, Badgegroups
   - Start page (Home page) with a presentation of the product.
